@@ -10,19 +10,6 @@ The project uses:
 
 ---
 
-## 🏗 Project Structure
-
-project-folder/
-│
-├── server.js
-├── db.js
-├── .env
-└── package.json
-
-yaml
-Copy code
-
----
 
 ## ⚙️ Installation & Setup
 
