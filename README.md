@@ -28,8 +28,8 @@ Copy code
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Huzaifa-io/express-postgres-crud-api
+cd express-postgres-crud-api
 2️⃣ Install Dependencies
 bash
 Copy code
@@ -37,14 +37,12 @@ npm install
 3️⃣ Setup Environment Variables
 Create a file named .env and paste your database URL:
 
-perl
-Copy code
+
 DATABASE_URL=postgresql://YOUR_USER:YOUR_PASS@YOUR_HOST/YOUR_DB?sslmode=require
 4️⃣ Create Database Table
 Go to https://console.neon.tech → SQL Editor and run:
 
-sql
-Copy code
+
 CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
@@ -53,13 +51,11 @@ CREATE TABLE IF NOT EXISTS users (
   city TEXT
 );
 ▶️ Run Server
-bash
-Copy code
+
+
 npm start
 Server will start on:
 
-arduino
-Copy code
 http://localhost:5000
 📌 API Endpoints (CRUD)
 Method	Endpoint	Description	Body Example
@@ -70,8 +66,8 @@ PUT	/users/:id	Update user	same as POST
 DELETE	/users/:id	Delete user	—
 
 📦 Example JSON Body (POST/PUT)
-json
-Copy code
+
+
 {
   "name": "Ali Khan",
   "age": 20,
